@@ -1,0 +1,10 @@
+apiVersion: v1
+kind: Pod
+metadata:
+  name: wordpress
+spec:
+  containers:
+  - name: wordpress
+    image: munara241/mywordpress:1.0
+  imagePullSecrets: 
+  - name: my-secret
