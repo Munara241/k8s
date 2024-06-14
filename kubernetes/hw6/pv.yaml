@@ -3,10 +3,11 @@ kind: PersistentVolume
 metadata:
   name: app-config
 spec:
+  storageClassName: standard
   capacity:
     storage: 1Gi
   accessModes:
     - ReadWriteOnce
   hostPath:
-    path: /svr/app-config
+    path: "/svr/app-config"
     type: DirectoryOrCreate
