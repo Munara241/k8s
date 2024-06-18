@@ -1,0 +1,23 @@
+# task. troubleshooting and start our nodes
+# ssh to node
+ssh [name-of-node]
+
+# start kubelet
+systemctl start kubelet
+systemctl enabled
+
+
+# creat new Cluster
+kubectl create clusterrole [name of the cluster] ...
+
+
+# create serviceAccount
+
+k creat sa
+
+# rolebinding
+
+
+
+
+
